@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a73e8">
+    <title>Dr. Rafael Oliveira - Odontologia Moderna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .endereco-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+        }
+        
+        .endereco-overlay p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .mapa-placeholder {
+            position: relative;
+            height: 300px;
+            background-color: #edf7ed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <span class="logo-icon"><i class="fas fa-tooth"></i></span>
+                    <span class="logo-text">Dr. Rafael Oliveira</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#google-reviews" class="nav-link">Avaliações</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#localizacao" class="nav-link">Localização</a></li>
+                    <li><a href="https://wa.me/5521999998888" target="_blank" class="cta-button primary"><i class="fab fa-whatsapp"></i> Agendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="fade-in">Seu sorriso merece o melhor</h1>
+                <p class="fade-in-delay">Transformando vidas através da odontologia moderna e atendimento personalizado.</p>
+                <div class="hero-cta fade-in-delay-2">
+                    <a href="#localizacao" class="cta-button primary"><i class="fas fa-calendar-check"></i> Agendar Consulta</a>
+                    <a href="#servicos" class="cta-button secondary"><i class="fas fa-tooth"></i> Nossos Serviços</a>
+                </div>
+                <div class="social-proof fade-in-delay-3">
+                    <div class="social-proof-item">
+                        <i class="fas fa-smile"></i>
+                        <span>+1000 pacientes</span>
+                    </div>
+                    <div class="social-proof-item">
+                        <i class="fas fa-star"></i>
+                        <span>5.0 de avaliação</span>
+                    </div>
+                    <div class="social-proof-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Especialista</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#sobre"><i class="fas fa-chevron-down pulse"></i></a>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre-section">
+        <div class="container sobre-container">
+            <div class="section-header">
+                <h2>Conheça o Dr. Rafael</h2>
+                <p class="section-subtitle">Excelência e cuidado em cada tratamento</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-img">
+                    <div class="img-wrapper">
+                        <img src="images/rafaeloliveira.jpg" alt="Dr. Rafael Oliveira" loading="lazy">
+                        <div class="experience-badge">
+                            <span class="number">15</span>
+                            <span class="text">anos de<br>experiência</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-texto">
+                    <div class="credential">
+                        <i class="fas fa-id-card"></i>
+                        <span>CRO-RJ: 12345</span>
+                    </div>
+                    <p class="sobre-highlight">Dedicado a transformar sorrisos, o Dr. Rafael alia técnica avançada com atendimento humanizado.</p>
+                    <p>Formado pela renomada Universidade Federal do Rio de Janeiro, especializa-se em oferecer soluções odontológicas que combinam estética e funcionalidade.</p>
+                    
+                    <div class="qualificacoes">
+                        <h3><i class="fas fa-graduation-cap"></i> Qualificações</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Doutorado em Implantodontia</li>
+                            <li><i class="fas fa-check-circle"></i> Mestrado em Odontologia Estética</li>
+                            <li><i class="fas fa-check-circle"></i> Especialista em Ortodontia Digital</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="diferenciais">
+                        <h3><i class="fas fa-trophy"></i> Diferenciais</h3>
+                        <div class="diferenciais-grid">
+                            <div class="diferencial-item">
+                                <i class="fas fa-clock"></i>
+                                <h4>Pontualidade</h4>
+                                <p>Respeito ao seu tempo</p>
+                            </div>
+                            <div class="diferencial-item">
+                                <i class="fas fa-microscope"></i>
+                                <h4>Tecnologia</h4>
+                                <p>Equipamentos modernos</p>
+                            </div>
+                            <div class="diferencial-item">
+                                <i class="fas fa-hand-holding-heart"></i>
+                                <h4>Humanização</h4>
+                                <p>Tratamento acolhedor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="agendar-centralizado">
+                <a href="https://wa.me/5521999998888" target="_blank" class="cta-button primary"><i class="fab fa-whatsapp"></i> Agendar Consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos-section">
+        <div class="container servicos-container">
+            <div class="section-header">
+                <h2>Serviços Especializados</h2>
+                <p class="section-subtitle">Soluções completas para sua saúde bucal</p>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-item">
+                    <div class="servico-icon">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <div class="servico-img">
+                        <img src="https://www.uniodonto-rs.com.br/storage/app/arquivos/upload88/lentes-de-contato-inova-odontologia.jpg" alt="Estética Dental - Facetas e Lentes de Contato" loading="lazy">
+                    </div>
+                    <h3>Estética Dental</h3>
+                    <p>Transforme seu sorriso com facetas e lentes de contato dental da mais alta qualidade, criadas para realçar sua beleza natural.</p>
+                    <a href="https://wa.me/5521999998888?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20para%20Estética%20Dental" target="_blank" class="servico-cta">Agendar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="servico-item">
+                    <div class="servico-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <div class="servico-img">
+                        <img src="https://odontologiaesaudebh.com.br/wp-content/uploads/2021/04/pexels-andrea-piacquadio-3779709-1080x675.jpg" alt="Implante Dental" loading="lazy">
+                    </div>
+                    <h3>Implante Dental</h3>
+                    <p>Recupere a função e a estética com implantes que se integram naturalmente com seu sorriso, devolvendo confiança ao mastigar e sorrir.</p>
+                    <a href="https://wa.me/5521999998888?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20para%20Implante%20Dental" target="_blank" class="servico-cta">Agendar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="servico-item">
+                    <div class="servico-icon">
+                        <i class="fas fa-teeth-open"></i>
+                    </div>
+                    <div class="servico-img">
+                        <img src="https://gouodonto.com.br/2019/wp-content/uploads/2021/11/clareamento-dental.jpg" alt="Clareamento Dental" loading="lazy">
+                    </div>
+                    <h3>Clareamento Dental</h3>
+                    <p>Nosso clareamento dental profissional remove manchas e amarelados de forma segura, proporcionando um sorriso visivelmente mais branco e radiante.</p>
+                    <a href="https://wa.me/5521999998888?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20para%20Clareamento%20Dental" target="_blank" class="servico-cta">Agendar <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="servicos-cta">
+                <a href="https://wa.me/5521999998888" target="_blank" class="cta-button primary"><i class="fab fa-whatsapp"></i> Consultar Disponibilidade</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="google-reviews" class="google-reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que nossos pacientes dizem</h2>
+                <p>Confira as avaliações de quem já transformou seu sorriso conosco</p>
+            </div>
+
+            <div class="google-review-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" alt="Google Logo" class="google-logo" width="36" height="36">
+                <div class="google-total-rating">
+                    <div class="rating-number">4.9</div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="rating-count">Baseado em 127 avaliações</div>
+                </div>
+            </div>
+
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Ana_Paula_Padr%C3%A3o.jpg" alt="Ana Paula Silva" loading="lazy" width="60" height="60">
+                        </div>
+                        <div class="review-author">
+                            <h4>Ana Paula Silva</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-content">"Melhor dentista que já visitei! Fiz um tratamento de canal sem nenhuma dor e o atendimento foi excepcional. Recomendo demais!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3461648:1704031626/roberto-kovalick-finaliza-sao-silvestre.jpg?f=16x9&$p$f=e9252d3" alt="Roberto Mendes" loading="lazy" width="60" height="60">
+                        </div>
+                        <div class="review-author">
+                            <h4>Roberto Mendes</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-content">"Fiz o clareamento dental e o resultado superou minhas expectativas. A equipe é muito atenciosa e o consultório tem tecnologia de ponta. Valeu cada centavo!"</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://www.otempo.com.br/content/dam/otempo/editorias/entretenimento/2025/2/entretenimento-carla-marins-1739106000.webp" alt="Carla Oliveira" loading="lazy" width="60" height="60">
+                        </div>
+                        <div class="review-author">
+                            <h4>Carla Oliveira</h4>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-content">"As lentes de contato dental transformaram meu sorriso completamente. Me sinto muito mais confiante para sorrir em fotos agora. Atendimento de primeira!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container faq-container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Aceita planos de saúde?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No momento, atendemos apenas particular. Porém, oferecemos condições especiais de pagamento e parcelamento nos principais cartões.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quanto tempo dura um implante dentário?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Com os cuidados adequados, os implantes dentários podem durar por décadas ou até mesmo por toda a vida. É fundamental manter uma boa higiene oral e realizar acompanhamentos periódicos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>O clareamento dental causa sensibilidade?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Alguns pacientes podem experimentar sensibilidade temporária durante ou após o procedimento. Utilizamos técnicas e produtos modernos que minimizam esse desconforto, e oferecemos recomendações personalizadas para cada caso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual o tempo médio de tratamento com facetas dentais?</h3>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O tratamento com facetas geralmente é concluído em 2 a 3 consultas, dependendo da complexidade do caso. Desde a avaliação inicial até a instalação final, o processo completo costuma levar entre 2 e 4 semanas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="localizacao-section">
+        <div class="container localizacao-container">
+            <div class="section-header">
+                <h2>Localização</h2>
+                <p class="section-subtitle">Visite nosso consultório</p>
+            </div>
+            <div class="localizacao-content">
+                <div class="mapa">
+                    <div class="mapa-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.0851318153964!2d-43.564876!3d-22.8837542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be3f92b45edbd%3A0x80cc31074f0ddb53!2sAv.%20Ces%C3%A1rio%20de%20Melo%2C%202635%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023052-102!5e0!3m2!1spt-BR!2sbr!4v1688505417485!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png" alt="Google Maps" class="maps-icon" style="width: 40px; height: auto; position: absolute; top: 10px; right: 10px; z-index: 10;">
+                    </div>
+                </div>
+                <div class="endereco-contato">
+                    <div class="endereco-item">
+                        <div class="endereco-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Consultório Principal</h3>
+                        </div>
+                        <address>
+                            <p>Av. Cesário de Melo, 2635 - Sala 302</p>
+                            <p>Campo Grande - Rio de Janeiro, RJ</p>
+                            <p>CEP: 23052-102</p>
+                        </address>
+                        <div class="contato-info">
+                            <div class="contato-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <a href="tel:+5521999998888"><span>(21) 99999-8888</span></a>
+                            </div>
+                            <div class="contato-item">
+                                <i class="far fa-clock"></i>
+                                <span>Seg-Sex: 8h às 18h</span>
+                            </div>
+                        </div>
+                        <div class="contato-cta">
+                            <a href="https://wa.me/5521999998888" target="_blank" class="cta-button whatsapp">
+                                <i class="fab fa-whatsapp"></i> Agendar Consulta
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <i class="fas fa-tooth"></i>
+                    <h3>Dr. Rafael Oliveira</h3>
+                    <p>Odontologia de excelência</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#google-reviews">Avaliações</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fab fa-whatsapp"></i> <a href="tel:+5521999998888">(21) 99999-8888</a></p>
+                        <p><i class="far fa-envelope"></i> <a href="mailto:contato@drrafael.com.br">contato@drrafael.com.br</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Rafael Oliveira. Todos os direitos reservados.</p>
+                <p>CRO-RJ: 12345 | Responsável Técnico: Dr. Rafael Oliveira</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
